@@ -1,0 +1,296 @@
+.speakerwhite2 {
+  width: 18rem;
+  height: 25rem;
+  margin-top: 30rem;
+  display: none;
+}
+
+/* veľa medii */
+
+@media (max-width: 1400px) {
+  .ptext {
+    z-index: 9999;
+  }
+
+  .product {
+    overflow-y: hidden;
+  }
+
+  .plantxt {
+    background-color: #0a0617;
+    padding-top: 1rem;
+    margin-top: -0.1rem;
+    padding-right: 28rem;
+    padding-bottom: 5rem;
+  }
+
+  .headphone {
+    margin-left: 40rem;
+    margin-top: -38rem;
+  }
+
+  .card2,
+  .card {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 60vh;
+  }
+
+  .aboutalt {
+    height: 70vh;
+  }
+  .headphone {
+    margin-left: 20rem;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    height: 50vh;
+  }
+  .card2,
+  .card {
+    margin-top: 5rem;
+    margin-left: 12rem;
+    width: 40%;
+  }
+
+  .productname {
+    margin-top: 45rem;
+    font-size: 4rem;
+  }
+  .productdesc {
+    margin-top: -3rem;
+    font-size: 3rem;
+  }
+  .plantxt {
+    background-color: #0a061700;
+    padding-top: 0rem;
+    margin-top: 2rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .object2,
+  .object {
+    display: none;
+  }
+
+  .plans {
+    height: 50vh;
+  }
+  .plana,
+  .planb,
+  .planc {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 12rem;
+  }
+  .plans h1 {
+    margin-left: 35%;
+  }
+
+  footer {
+    gap: 5rem 5rem;
+  }
+
+  .artc {
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
+  .cards {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .plans {
+    grid-template-columns: auto;
+    gap: 0 0;
+  }
+
+  .plana,
+  .planb,
+  .planc {
+    height: 25rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .plana {
+    margin-top: 15rem;
+  }
+
+  .plans h1 {
+    margin-left: 18%;
+  }
+
+  .footer {
+    margin-top: 70rem;
+    gap: 1rem 1rem;
+  }
+
+  .card,
+  .card2 {
+    display: none;
+  }
+
+  .artc {
+    font-size: 1rem;
+    margin-right: 2.5rem;
+  }
+
+  .headphone {
+    display: none;
+  }
+
+  .nava {
+    display: none;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .style {
+    font-size: 3.5rem;
+  }
+
+  .speakerwhite,
+  .speakerblack {
+    display: none;
+  }
+  .productname {
+    margin-top: 5rem;
+  }
+
+  .speakerwhite2 {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-height: 860px) {
+  .product {
+    height: 120vh;
+  }
+}
+
+@media (max-height: 700px) {
+  .product,
+  .aboutalt {
+    height: 180vh;
+  }
+
+  .header,
+  .plans {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 1100px) {
+  .product {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 1500px) {
+  .checkproduct h1 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .checkout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .checkfill {
+    width: 40rem;
+  }
+  .form {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .checkout {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+  .checkfill {
+    width: 40rem;
+    margin-left: 2rem;
+  }
+  .form {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .checkfill {
+    width: 100%;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media print {
+  * {
+    background: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    margin: 0;
+  }
+
+  .productname {
+    margin-top: 15rem;
+    font-size: xx-large;
+  }
+  .speakerblack,
+  .speakerwhite {
+    display: none;
+  }
+  .artists h1 {
+    display: none;
+  }
+
+  .plans {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0 0;
+  }
+
+  .plans h1 {
+    margin-top: -15rem;
+    margin-left: 43%;
+  }
+
+  .plana {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .planc {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  footer {
+    display: none;
+  }
+}

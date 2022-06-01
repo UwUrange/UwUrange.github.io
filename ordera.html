@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <script type="text/javascript" src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="media.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Altstim - Checkout</title>
+  </head>
+  <body onload="Alt();">
+    <div class="w-full h-screen order">
+      <div class="checkout">
+        <div class="bg-red-800 rounded-2xl checkproduct flex">
+          <h1 class=" absolute mb-144  font-poppins text-white text-3xl">
+            Order:
+          </h1>
+
+          <h2 class="font-poppins text-white text-xl font-light text-center">
+            Seems like your cart is empty choose one of these plans to proceed
+          </h2>
+          <div class="flex gap-3">
+            <div onclick="Alt()"
+              class="alt text-2xl font-poppins text-white cursor-pointer w-28 h-12 rounded-lg ease-in-out duration-300 bg-purple-600 hover:bg-purple-700  hover:shadow-lg hover:shadow-purple-600/50"
+            >
+              Alt
+            </div>
+            <div onclick="ReAlt()"
+              class="realt text-2xl font-poppins text-white cursor-pointer w-28 h-12 rounded-lg ease-in-out duration-300 bg-blue-500 hover:bg-blue-600 hover:shadow-lg hover:shadow-sky-400/10"
+            >
+              ReAlt
+            </div>
+          </div> <div class="altcard hidden">
+          <div class="productalt w-64 h-48 rounded-lg ease-in-out duration-300  flex"><div class="altitem w-56 h-40"><div class="flex alttext font-poppins font-semibold text-3xl gap-3"><h1>Alt </h1><h3 class="font-light text-lg">3.99€ /month</h3></div><svg onclick="CloseCard()" class="ml-40 absolute cursor-pointer" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.14062 1.14062L21.8594 21.8594M21.8594 1.14062L1.14062 21.8594L21.8594 1.14062Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </div></div></div>
+            <div class="realtcard hidden">
+            <div class="productrealt w-64 h-48 rounded-lg ease-in-out duration-300  flex"><div class="realtitem w-56 h-40"><div class="flex realttext font-poppins font-semibold text-3xl gap-3"><h1>ReAlt </h1><h3 class="font-light text-lg">7.99€ /month</h3></div><svg onclick="CloseCard()" class="ml-40 absolute cursor-pointer" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.14062 1.14062L21.8594 21.8594M21.8594 1.14062L1.14062 21.8594L21.8594 1.14062Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div></div></div>
+        </div>
+        <div class="ml-40 rounded-2xl checkfill">
+            <div class="form">
+          <form action="https://www.paypal.com/donate/?hosted_button_id=4R55BNHS2ZGRC" method="post">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <div class="container">
+                  <form action="" class="m-auto" style="max-width: 600px">
+                    <h3 class="my-4 text-2xl font-semibold">Form</h3>
+                    <hr class="my-4" />
+                    <div class="form-group mb-3 row">
+                      <label for="your-name2" class="col-md-5 col-form-label"
+                        >Your Name</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          id="your-name2"
+                          name="your-name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 row">
+                      <label for="your-email3" class="col-md-5 col-form-label"
+                        >Your Email</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="email"
+                          class="form-control form-control-lg"
+                          id="your-email3"
+                          name="your-email"
+                          required
+                        /><small class="form-text text-muted">
+                          Please enter a valid email address</small
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 row">
+                      <label for="country5" class="col-md-5 col-form-label"
+                        >Country</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          id="country5"
+                          name="country"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 row">
+                      <label for="address6" class="col-md-5 col-form-label"
+                        >Address</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          id="address6"
+                          name="address"
+                        />
+                      </div>
+                    </div>
+                    <hr class="bg-transparent border-0 py-1" />
+                    <div class="form-group mb-3 row">
+                      <label for="extra8" class="col-md-5 col-form-label"
+                        >Extra</label
+                      >
+                      <div class="col-md-7">
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="extra8"
+                          name="extra"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="form-group mb-3 row">
+                      <label
+                        for="continue-with-paypal10"
+                        class="col-md-5 col-form-label"
+                      ></label>
+                      <div class="col-md-7"><a href="https://www.paypal.com/donate/?hosted_button_id=4R55BNHS2ZGRC">
+                        <button class="btn-lg ease-in-out font-semibold duration-300 bg-blue-400 hover:bg-sky-400 py-2 px-4 rounded-md" type="submit">
+                          Continue with <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_140_41)">
+                            <path d="M28.1199 7.426C28.3599 5.284 27.9339 3.762 26.7159 2.374C25.2559 0.712 22.6239 0 19.2519 0H9.46795C9.13488 0.000144231 8.81278 0.119028 8.55948 0.335302C8.30618 0.551576 8.13829 0.851071 8.08595 1.18L4.00995 27.018C3.99085 27.138 3.99802 27.2607 4.03096 27.3777C4.06389 27.4946 4.12181 27.6031 4.20072 27.6955C4.27962 27.7879 4.37764 27.8621 4.488 27.9129C4.59836 27.9638 4.71844 27.9901 4.83995 27.99H10.3519L9.94795 30.55C9.91963 30.7292 9.93049 30.9125 9.97977 31.0871C10.0291 31.2618 10.1156 31.4237 10.2335 31.5617C10.3513 31.6997 10.4976 31.8105 10.6624 31.8865C10.8272 31.9625 11.0065 32.0019 11.1879 32.002H16.2799C17.1379 32.002 17.8659 31.382 18.0039 30.54L18.0539 30.28L19.0139 24.194L19.0739 23.866L19.0759 23.852C19.1018 23.6861 19.1862 23.535 19.3139 23.426C19.4416 23.317 19.6041 23.2574 19.7719 23.258H20.5319C23.0639 23.258 25.3819 22.746 27.2219 21.438C27.9799 20.898 28.6459 20.232 29.2079 19.428C30.1412 18.1287 30.7452 16.6222 30.9679 15.038C31.4519 12.546 31.2279 10.326 29.8279 8.73C29.3964 8.24842 28.8815 7.84868 28.3079 7.55L28.1199 7.428V7.426ZM13.0859 17.64C13.2841 17.5365 13.5044 17.4823 13.7279 17.482H16.5999C22.2399 17.482 26.6539 15.194 27.9439 8.57L27.9499 8.538C28.3839 8.786 28.7499 9.078 29.0459 9.414C30.1379 10.66 30.4039 12.484 29.9459 14.834C29.4019 17.628 28.2139 19.448 26.6199 20.582C25.0159 21.722 22.9359 22.212 20.5339 22.212H19.7739C19.3587 22.2115 18.9568 22.3589 18.6405 22.628C18.3241 22.897 18.1141 23.27 18.0479 23.68L17.9879 24.008L17.0279 30.094L16.9799 30.354L16.9779 30.362C16.9513 30.5273 16.8666 30.6778 16.739 30.7863C16.6115 30.8948 16.4494 30.9542 16.2819 30.954H11.1899C11.1592 30.9541 11.1287 30.9475 11.1008 30.9347C11.0728 30.9218 11.0479 30.9031 11.028 30.8796C11.008 30.8562 10.9933 30.8288 10.985 30.7991C10.9767 30.7695 10.975 30.7384 10.9799 30.708L11.3959 28.068L13.0859 17.64V17.64Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_140_41">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                        </button>
+                    </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400&family=Poiret+One&family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@400;600;700&display=swap");
+    </style>
+  </body>
+</html>

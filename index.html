@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your personal favorite music service">
+    <meta name="keywords" content="music spseke sound subscribtion eargasm">
+    <meta name="author" content="Adam Ujházy">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <script type="text/javascript" src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="media.css">
+    <title>Altstim - The Music you Enjoy</title>
+  </head>
+  <body>
+
+
+<!-- Header/Nav bar -->
+
+    <header class="w-full, h-screen header">
+      <nav class="container mx-auto p-5 relative">
+        <div class="flex items-center justify-between">
+          <div class="cursor-pointer">
+            <svg
+              width="184"
+              height="74"
+              viewBox="0 0 184 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M44.2844 5.35645C44.2708 5.44877 44.2591 5.58024 44.2591 5.75918V34.1772H45.6468V5.75918C45.6468 5.61235 45.6337 5.51678 45.6219 5.46078C45.5779 5.44296 45.5067 5.41914 45.4004 5.39673C45.2098 5.35655 44.9654 5.33333 44.6729 5.33333C44.5024 5.33333 44.3753 5.34376 44.2844 5.35645ZM50.9801 34.1772V5.75918C50.9801 3.6743 50.1178 2.00335 48.5674 1.00461C47.2254 0.140195 45.6967 0 44.6729 0C43.3772 0 41.8065 0.268716 40.5751 1.42159C39.3091 2.60684 38.9258 4.22793 38.9258 5.75918V34.1772H37.1118C36.8718 34.1772 36.6392 34.2089 36.418 34.2683V27.8825C36.418 25.8279 35.3577 24.1418 34.3087 23.067C33.7628 22.5076 33.1381 22.0255 32.4871 21.6695C31.8827 21.339 31.0403 20.9993 30.0999 21.0032C28.4835 21.0098 26.7846 21.7095 25.4958 22.7705C24.1677 23.864 22.9634 25.6115 22.9634 27.8825V67.2561C22.9011 67.2894 22.8106 67.3275 22.6923 67.3593C22.5449 67.399 22.4 67.4165 22.2864 67.418C22.2767 67.4163 22.2166 67.4072 22.11 67.3662C21.9666 67.3112 21.8114 67.2256 21.6781 67.1242C21.6384 67.0941 21.6044 67.0653 21.5758 67.039V36.8438C21.5758 31.9793 17.884 29.4541 15.3197 29.4049C13.3655 29.3674 11.695 30.5563 10.6604 31.7434C10.072 32.4185 9.54909 33.2452 9.18873 34.1772H2.66667C1.19391 34.1772 0 35.3711 0 36.8438C0 38.3166 1.19391 39.5105 2.66667 39.5105H11.348C12.8207 39.5105 14.0146 38.3166 14.0146 36.8438C14.0146 36.3415 14.2506 35.7414 14.6809 35.2477C14.8834 35.0154 15.0811 34.864 15.225 34.7829C15.3427 34.8424 15.4889 34.9401 15.6317 35.0834C15.907 35.3596 16.2424 35.8733 16.2424 36.8438V67.3684C16.2424 69.2866 17.5119 70.6566 18.4505 71.3701C19.4473 72.1278 20.8398 72.7515 22.2696 72.7515C23.3841 72.7515 24.7566 72.4603 25.9359 71.688C27.2103 70.8534 28.2968 69.4005 28.2968 67.3684V27.8825C28.2968 27.6211 28.4266 27.2659 28.8856 26.888C29.2742 26.5681 29.689 26.4122 29.9458 26.3587C30.0932 26.442 30.2923 26.5876 30.4919 26.7921C30.9504 27.2619 31.0846 27.6847 31.0846 27.8825V67.3684C31.0846 68.4278 31.5037 69.3075 31.9302 69.9279C32.3666 70.5627 32.9215 71.092 33.4788 71.5111C34.5495 72.3163 36.0109 72.9956 37.4891 73.0972C38.3153 73.1539 39.1108 72.9579 39.7213 72.7388C40.3723 72.5053 41.0303 72.1671 41.6286 71.7522C42.6398 71.051 44.2591 69.5664 44.2591 67.3684V39.5105H45.6468V67.9164C45.6468 69.6082 46.4105 71.0525 47.7171 71.9782C48.9119 72.8245 50.3577 73.1035 51.674 73.1035C53.2004 73.1035 54.5947 72.3826 55.5643 71.4725C56.5553 70.5423 57.4211 69.1125 57.4211 67.3684V39.5105H181.333C182.806 39.5105 184 38.3166 184 36.8438C184 35.3711 182.806 34.1772 181.333 34.1772H50.9801ZM50.9801 39.5105V67.6933C50.9846 67.6945 50.9892 67.6957 50.9938 67.6969C51.1388 67.7347 51.3481 67.7665 51.6259 67.7698C51.6351 67.7667 51.6478 67.7618 51.6641 67.7546C51.7355 67.7229 51.8274 67.6654 51.9143 67.5838C52.0007 67.5027 52.0516 67.4266 52.0757 67.3775C52.082 67.3646 52.0857 67.3553 52.0878 67.3495V39.5105H50.9801ZM38.9258 39.5105H37.1118C36.8718 39.5105 36.6392 39.4788 36.418 39.4193V67.0163C36.4778 67.0787 36.5649 67.1588 36.6843 67.2486C36.8898 67.4031 37.1314 67.541 37.3698 67.6397C37.5458 67.7125 37.6827 67.7486 37.7715 67.765C37.8072 67.756 37.8572 67.7414 37.9204 67.7188C38.1237 67.6458 38.3664 67.5242 38.5893 67.3696C38.7476 67.2599 38.8572 67.1605 38.9258 67.0874V39.5105ZM29.8203 26.2982C29.8203 26.2979 29.8257 26.2995 29.8366 26.304C29.8258 26.3007 29.8204 26.2985 29.8203 26.2982Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M62.3154 42.4327V70.4369H76.3455V62.6237H70.2126V42.4327H62.3154ZM62.3154 31.231H70.2126V3.22682H62.3154V31.231ZM78.6841 42.4327V70.4369H86.5813V42.4327H78.6841ZM86.5813 31.231H78.6841V11.124H72.5512V3.22682H92.7142V11.04H86.5813V31.231ZM100.872 42.4327C101.409 43.8441 101.861 45.1136 102.227 46.2412C103.011 48.4816 103.403 50.3859 103.403 51.9541V62.9597C103.403 63.2958 103.291 63.5478 103.067 63.7158C102.899 63.8839 102.647 63.9679 102.311 63.9679C102.031 63.9679 101.779 63.8839 101.555 63.7158C101.331 63.5478 101.219 63.2958 101.219 62.9597V45.3171L93.574 47.9215V63.0437C93.574 65.3401 94.3861 67.2444 96.0104 68.7566C97.6906 70.2688 99.7909 71.0249 102.311 71.0249C104.776 71.0249 106.82 70.2688 108.444 68.7566C110.124 67.2444 110.965 65.3401 110.965 63.0437V51.9541C110.965 49.6578 110.573 47.2494 109.788 44.729C109.569 44.0248 109.315 43.2593 109.026 42.4327H100.872ZM104.652 31.231H96.4302C95.8438 29.6392 95.3398 28.1736 94.9182 26.8343C94.0221 23.8099 93.574 20.9255 93.574 18.1811V11.5441C93.574 9.02369 94.4141 6.92337 96.0944 5.24312C97.8306 3.50686 99.987 2.63873 102.563 2.63873C105.084 2.63873 107.212 3.50686 108.948 5.24312C110.685 6.92337 111.553 9.02369 111.553 11.5441V25.4061L103.908 27.9265V11.5441C103.908 11.096 103.768 10.7599 103.487 10.5359C103.263 10.3119 102.955 10.1999 102.563 10.1999C102.171 10.1999 101.835 10.3119 101.555 10.5359C101.331 10.7599 101.219 11.096 101.219 11.5441V18.1811C101.219 20.2534 101.639 22.6057 102.479 25.2381C103.041 26.9604 103.765 28.958 104.652 31.231ZM118.557 42.4327V70.4369H126.454V42.4327H118.557ZM126.454 31.231H118.557V11.124H112.424V3.22682H132.587V11.04H126.454V31.231ZM133.447 42.4327V70.4369H141.344V42.4327H133.447ZM141.344 31.231H133.447V3.22682H141.344V31.231ZM143.298 42.4327V70.4369H151.195V42.4327H143.298ZM151.809 42.4327L153.38 70.4369H159.681L161.252 42.4327H151.809ZM161.865 42.4327V70.4369H169.762V42.4327H161.865ZM169.762 31.231H143.298V3.22682H155.144L156.068 18.5171L156.572 28.5986L156.992 18.5171L157.916 3.22682H169.762V31.231Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="three col">
+            <div class="hamburger absolute" id="hamburger-12" onclick="Hamburger()">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <ul class="hmenu absolute mt-44 flex flex-col w-full bg-violet-700/10 text-2xl text-white drop-shadow-xl shadow-xl shadow-violet-700/10 ">
+          <a href="#altstim"><li class="hidden">About</li></a>  
+          <a href="#artists"><li class="hidden">Artists</li></a> 
+          <a href="#product"><li class="hidden">Products</li></a> 
+          </ul>
+          <div class="hidden md:flex space-x-6 antialiased">
+            <a
+              href="#altstim"
+              class="text-white font-poppins font-extralight mt-2 ease-in-out duration-300 hover:text-purple-400 nava"
+            >
+              About
+            </a>
+            <a
+              class="text-white font-poppins font-extralight mt-2 ease-in-out duration-300 hover:text-purple-400 nava"
+              href="#artists"
+            >
+              Artists
+            </a>
+            <a
+              class="text-white overflow-hidden font-poppins font-extralight mt-2 ease-in-out duration-300 hover:text-purple-400 nava"
+              href="#product"
+            >
+              Products
+            </a>
+
+            <a
+              href="#plans"
+              class="px-6 py-2 nava bg-white rounded-xl text-black font-poppins ease-in-out duration-300 font-medium hover:shadow-lg hover:shadow-purple-800/20 hover:bg-purple-400 hover:text-white"
+            >
+              Plans
+            </a>
+          </div>
+        </div>
+      </nav>
+      <article class="pt-28 pl-12">
+        <h1 class="text-white text-7xl font-poiret antialiased heading">
+          Listen to your favorite music <br />
+          with
+          <span class="font-cookie style text-8xl antialiased">style</span>
+        </h1>
+        <h2
+          class="py-10 heading2 text-white text-3xl font-quicksand font-light antialiased"
+        >
+          Your personal comfort streaming service
+        </h2>
+        <a href="#plans">
+          <button
+            class="bg-black px-5 py-3 font-quicksand font-bold rounded-md ease-in-out duration-300 text-white bg-opacity-40 hover:bg-opacity-60 hover:shadow-lg hover:shadow-purple-800/20"
+          >
+            Start now!
+          </button>
+        </a>
+        <div id="trigger1"></div>
+        <div class="headphone"></div>
+        <div id="trigger2"></div>
+      </article>
+    </header>
+
+<!-- About Sekcia  -->
+
+    <section class="w-full h-screen z-11 overflow-hidden aboutalt">
+      <h2 class="text-8xl text-white altstim p-12" id="altstim">
+        ABOUT <span class="altstima">ALTSTIM</span>
+      </h2>
+      <div class="w-full h-144 about">
+        <article
+          class="float-left artc font-quicksand font-light text-2xl text-white pl-12 text-justify"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+          ullam quibusdam mollitia veritatis minus, saepe cupiditate qui illo,
+          rerum minima nam officiis similique sint, inventore fugiat harum
+          assumenda impedit quam ipsam. Accusantium numquam modi deserunt
+          doloribus! Similique, fuga facilis. Et eius consectetur sed? Voluptate
+          a quisquam in, vero perspiciatis quaerat eius. Enim odio facilis
+          maxime magni eligendi temporibus culpa sint!
+        </article>
+        <div class="playercard">
+          <img src="/img/float.png" class="relative card2" alt="" />
+          <img src="/img/float2.png" class="relative card" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider, artists/skladatelia/prehrávač hudby -->
+
+
+    <div id="artists" class="artists w-full h-screen">
+      <h1 class="altstim text-9xl text-white absolute mb-164 z-10">ToP ARTiSTS</h1>
+      <h1 class="altstim watermark text-white absolute mb-164 opacity-10 z-10">
+        ToP ARTiSTS
+      </h1>
+      <div id="trigger3" class="left-0 mb-164"></div>
+      <div
+        class="object absolute w-64 h-64 bg-cover bg-[url('/img/01.png')] drop-shadow-xl shadow-indigo-600/50 mb-144 left-12 z-50 hue-rotate-180 opacity-70"
+      ></div>
+      <h2
+        class="current text-white text-6xl absolute mb-118 opacity-40 z-10"
+      ></h2>
+      <div class="cards">
+        <div id="container">
+          <div class="glide z-10">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides h-screen">
+                <li
+                  class="glide__slide c1 bg-gray-800 h-118 w-76 flex mt-5 hover:mt-0 gap-6"
+                >
+                  <div
+                    class="artist w-44 h-44 bg-[url('/img/glaive.png')] shadow-2xl bg-cover drop-shadow-lg"
+                  ></div>
+                  <h3 class="text-white font-quicksand font-semibold text-2xl">
+                    Glaive
+                  </h3>
+                  <div class="decs flex flex-row gap-11">
+                    <div id="desc" class="text-white font-quicksand text-2xl">
+                      Digicore Pop
+                    </div>
+                    <div
+                      id="button"
+                      class="buttong w-8 h-9 bg-cover bg-[url('/img/button.svg')] cursor-pointer"
+                      onclick="PlayG()"
+                    ></div>
+                  </div>
+                </li>
+                <li
+                  class="glide__slide c2 bg-gray-800 h-118 w-76 flex mt-5 hover:mt-0 gap-6"
+                >
+                  <div
+                    class="artist w-44 h-44 bg-[url('/img/chase.png')] shadow-2xl bg-cover drop-shadow-lg"
+                  ></div>
+                  <h3 class="text-white font-quicksand font-semibold text-2xl">
+                    Chase Atlantic
+                  </h3>
+                  <div class="decs flex flex-row gap-6">
+                    <div id="desc2" class="text-white font-quicksand text-2xl">
+                      Alternative / Indie
+                    </div>
+                    <div
+                      id="button"
+                      class="buttonc w-8 h-9 bg-cover bg-[url('/img/button.svg')] cursor-pointer"
+                      onclick="PlayC()"
+                    ></div>
+                  </div>
+                </li>
+                <li
+                  class="glide__slide c3 bg-gray-800 h-118 w-76 mt-5 flex hover:mt-0 gap-6"
+                >
+                  <div
+                    class="artist w-44 h-44 bg-[url('/img/neighbour.png')] shadow-2xl bg-cover drop-shadow-lg"
+                  ></div>
+                  <h3 class="text-white font-quicksand font-semibold text-2xl">
+                    The Neighbourhood
+                  </h3>
+                  <div class="decs flex flex-row gap-6">
+                    <div id="desc3" class="text-white font-quicksand text-2xl">
+                      Alternative / Indie
+                    </div>
+                    <div
+                      class="buttonn w-8 h-9 bg-cover bg-[url('/img/button.svg')] cursor-pointer"
+                      onclick="PlayN()"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="absolute video">
+            <video id="chase" muted class="hidden">
+              <source src="video/chase.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+          <div class="absolute video">
+            <video id="glaive" muted class="hidden">
+              <source src="video/glaive.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+
+        <div class="absolute video">
+          <video id="neighbour" muted class="hidden">
+            <source src="video/neighbour.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+
+<!-- Javascript pre knižnicu GlideJS (slider) -->
+
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+        <script>
+          var glide = new Glide(".glide", {
+            type: "carousel",
+            perView: 3,
+            focusAt: "center",
+            startAt: 1,
+            gap: 100,
+            breakpoints: {
+              800: {
+                perView: 2,
+              },
+              480: {
+                perView: 1,
+              },
+            },
+          });
+
+          glide.mount();
+        </script>
+      </div>
+    </div>
+
+
+<!-- Produkt sekcia -->
+
+    <div
+      id="product"
+      class="product w-full h-screen flex flex-col gap-11 "
+    >
+      <div
+        class="text-black ptext productname font-raleway font-extrabold text-8xl drop-shadow-lg p-16"
+      >
+        ALTSTIM BEAT D
+      </div>
+      <div
+        class="text-white ptext productdesc font-raleway font-semibold text-7xl drop-shadow-lg pl-16"
+      >
+        EXPLORE THE LIMITS <br />
+        OF MUSIC
+      </div>
+      <div
+        class="text-white ptext productprice font-montserrat font-light text-4xl drop-shadow-lg pl-16"
+      >
+        95.99€
+      </div>
+      <div
+        class="speakerwhite absolute  bg-cover bg-center cursor-pointer right-15 bg-[url('/img/speakerw.png')]"
+        onclick="Swap()"
+      ></div>
+      <div
+        class="speakerblack drop-shadow-lg absolute  bg-cover bg-center cursor-pointer right-96 mt-64 bg-[url('/img/speakerb.png')]"
+        onclick="Swap()"
+      ></div>
+
+      <div
+      class="speakerwhite2 absolute  bg-cover bg-center cursor-pointer right-4 bg-[url('/img/speakerb.png')]"
+    ></div>
+
+<!-- Plány na kúpu -->
+
+    </div>
+    <div id="plans" class="plans w-full h-screen ">
+      <h1 class="plantxt altstim text-9xl text-white absolute mt-11 z-10">OUR PLaNS</h1>
+      <div id="trigger4" class="left-0 mb-164"></div>
+      <div
+        class="object2 absolute w-64 h-80 bg-cover bg-[url('/img/02.png')] drop-shadow-xl shadow-indigo-600/50 -mb-128 right-28 z-50 hue-rotate-60 opacity-70"
+      ></div>
+      <div class="plana flex flex-col gap-6">
+        <h2 class="free font-poppins font-semibold text-3xl">Free</h2>
+        <div class="list flex">
+          <ul class="font-poppins text-xl">
+            <dt class="font-semibold cursor-pointer" onclick="ShowLista()">
+              Show perks:
+            </dt>
+            <li>Unlimited Playlists</li>
+            <li>Free 5 skips</li>
+            <li>Equivalizer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="planb flex flex-col gap-6">
+        <h2 class="font-poppins font-semibold text-3xl">Alt</h2>
+        <div class="list flex">
+          <ul class="font-poppins text-xl">
+            <dt class="font-semibold cursor-pointer" onclick="ShowListb()">
+              Show perks:
+            </dt>
+            <li>Ad free listening</li>
+            <li>Offline listening</li>
+            <li class="text-white">High sound quality</li>
+            <li>Direct artist support</li>
+          </ul>
+        </div>
+        <p class="font-poppins text-xl">3.99€ /month</p>
+        <a href="ordera.html">
+        <div
+          class="font-poppins text-xl font-semibold py-2 px-9 rounded-md cursor-pointer drop-shadow-lg bg-white ease-in-out duration-300 hover:shadow-fuchsia-600/50 hover:shadow-xl mb-7"
+        >
+          Join now
+        </div></a>
+      </div>
+      <div class="planc flex flex-col gap-6">
+        <h2 class="font-poppins font-semibold text-3xl">ReAlt</h2>
+        <div class="list flex">
+          <ul class="font-poppins text-xl">
+            <dt class="font-semibold cursor-pointer" onclick="ShowListc()">
+              Show perks:
+            </dt>
+            <li>Ad free listening</li>
+            <li>3 extra accounts</li>
+            <li class="text-white">Hi-Fi sound quality</li>
+            <li>Direct artist support</li>
+          </ul>
+        </div>
+        <p class="font-poppins text-xl">7.99€ /month</p>
+       <a href="orderb.html"> <div onclick="ReAlt()"
+          class="font-poppins text-xl font-semibold py-2 px-9 rounded-md cursor-pointer drop-shadow-lg bg-white ease-in-out duration-300 hover:shadow-cyan-500/50 hover:shadow-xl mb-7"
+        >
+          Join now
+        </div></a>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+
+
+    <footer class="w-full h-28 mt-24 footer">
+      <svg
+        class="cursor-pointer"
+        width="160"
+        height="55"
+        viewBox="0 0 184 74"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M44.2844 5.35645C44.2708 5.44877 44.2591 5.58024 44.2591 5.75918V34.1772H45.6468V5.75918C45.6468 5.61235 45.6337 5.51678 45.6219 5.46078C45.5779 5.44296 45.5067 5.41914 45.4004 5.39673C45.2098 5.35655 44.9654 5.33333 44.6729 5.33333C44.5024 5.33333 44.3753 5.34376 44.2844 5.35645ZM50.9801 34.1772V5.75918C50.9801 3.6743 50.1178 2.00335 48.5674 1.00461C47.2254 0.140195 45.6967 0 44.6729 0C43.3772 0 41.8065 0.268716 40.5751 1.42159C39.3091 2.60684 38.9258 4.22793 38.9258 5.75918V34.1772H37.1118C36.8718 34.1772 36.6392 34.2089 36.418 34.2683V27.8825C36.418 25.8279 35.3577 24.1418 34.3087 23.067C33.7628 22.5076 33.1381 22.0255 32.4871 21.6695C31.8827 21.339 31.0403 20.9993 30.0999 21.0032C28.4835 21.0098 26.7846 21.7095 25.4958 22.7705C24.1677 23.864 22.9634 25.6115 22.9634 27.8825V67.2561C22.9011 67.2894 22.8106 67.3275 22.6923 67.3593C22.5449 67.399 22.4 67.4165 22.2864 67.418C22.2767 67.4163 22.2166 67.4072 22.11 67.3662C21.9666 67.3112 21.8114 67.2256 21.6781 67.1242C21.6384 67.0941 21.6044 67.0653 21.5758 67.039V36.8438C21.5758 31.9793 17.884 29.4541 15.3197 29.4049C13.3655 29.3674 11.695 30.5563 10.6604 31.7434C10.072 32.4185 9.54909 33.2452 9.18873 34.1772H2.66667C1.19391 34.1772 0 35.3711 0 36.8438C0 38.3166 1.19391 39.5105 2.66667 39.5105H11.348C12.8207 39.5105 14.0146 38.3166 14.0146 36.8438C14.0146 36.3415 14.2506 35.7414 14.6809 35.2477C14.8834 35.0154 15.0811 34.864 15.225 34.7829C15.3427 34.8424 15.4889 34.9401 15.6317 35.0834C15.907 35.3596 16.2424 35.8733 16.2424 36.8438V67.3684C16.2424 69.2866 17.5119 70.6566 18.4505 71.3701C19.4473 72.1278 20.8398 72.7515 22.2696 72.7515C23.3841 72.7515 24.7566 72.4603 25.9359 71.688C27.2103 70.8534 28.2968 69.4005 28.2968 67.3684V27.8825C28.2968 27.6211 28.4266 27.2659 28.8856 26.888C29.2742 26.5681 29.689 26.4122 29.9458 26.3587C30.0932 26.442 30.2923 26.5876 30.4919 26.7921C30.9504 27.2619 31.0846 27.6847 31.0846 27.8825V67.3684C31.0846 68.4278 31.5037 69.3075 31.9302 69.9279C32.3666 70.5627 32.9215 71.092 33.4788 71.5111C34.5495 72.3163 36.0109 72.9956 37.4891 73.0972C38.3153 73.1539 39.1108 72.9579 39.7213 72.7388C40.3723 72.5053 41.0303 72.1671 41.6286 71.7522C42.6398 71.051 44.2591 69.5664 44.2591 67.3684V39.5105H45.6468V67.9164C45.6468 69.6082 46.4105 71.0525 47.7171 71.9782C48.9119 72.8245 50.3577 73.1035 51.674 73.1035C53.2004 73.1035 54.5947 72.3826 55.5643 71.4725C56.5553 70.5423 57.4211 69.1125 57.4211 67.3684V39.5105H181.333C182.806 39.5105 184 38.3166 184 36.8438C184 35.3711 182.806 34.1772 181.333 34.1772H50.9801ZM50.9801 39.5105V67.6933C50.9846 67.6945 50.9892 67.6957 50.9938 67.6969C51.1388 67.7347 51.3481 67.7665 51.6259 67.7698C51.6351 67.7667 51.6478 67.7618 51.6641 67.7546C51.7355 67.7229 51.8274 67.6654 51.9143 67.5838C52.0007 67.5027 52.0516 67.4266 52.0757 67.3775C52.082 67.3646 52.0857 67.3553 52.0878 67.3495V39.5105H50.9801ZM38.9258 39.5105H37.1118C36.8718 39.5105 36.6392 39.4788 36.418 39.4193V67.0163C36.4778 67.0787 36.5649 67.1588 36.6843 67.2486C36.8898 67.4031 37.1314 67.541 37.3698 67.6397C37.5458 67.7125 37.6827 67.7486 37.7715 67.765C37.8072 67.756 37.8572 67.7414 37.9204 67.7188C38.1237 67.6458 38.3664 67.5242 38.5893 67.3696C38.7476 67.2599 38.8572 67.1605 38.9258 67.0874V39.5105ZM29.8203 26.2982C29.8203 26.2979 29.8257 26.2995 29.8366 26.304C29.8258 26.3007 29.8204 26.2985 29.8203 26.2982Z"
+          fill="white"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M62.3154 42.4327V70.4369H76.3455V62.6237H70.2126V42.4327H62.3154ZM62.3154 31.231H70.2126V3.22682H62.3154V31.231ZM78.6841 42.4327V70.4369H86.5813V42.4327H78.6841ZM86.5813 31.231H78.6841V11.124H72.5512V3.22682H92.7142V11.04H86.5813V31.231ZM100.872 42.4327C101.409 43.8441 101.861 45.1136 102.227 46.2412C103.011 48.4816 103.403 50.3859 103.403 51.9541V62.9597C103.403 63.2958 103.291 63.5478 103.067 63.7158C102.899 63.8839 102.647 63.9679 102.311 63.9679C102.031 63.9679 101.779 63.8839 101.555 63.7158C101.331 63.5478 101.219 63.2958 101.219 62.9597V45.3171L93.574 47.9215V63.0437C93.574 65.3401 94.3861 67.2444 96.0104 68.7566C97.6906 70.2688 99.7909 71.0249 102.311 71.0249C104.776 71.0249 106.82 70.2688 108.444 68.7566C110.124 67.2444 110.965 65.3401 110.965 63.0437V51.9541C110.965 49.6578 110.573 47.2494 109.788 44.729C109.569 44.0248 109.315 43.2593 109.026 42.4327H100.872ZM104.652 31.231H96.4302C95.8438 29.6392 95.3398 28.1736 94.9182 26.8343C94.0221 23.8099 93.574 20.9255 93.574 18.1811V11.5441C93.574 9.02369 94.4141 6.92337 96.0944 5.24312C97.8306 3.50686 99.987 2.63873 102.563 2.63873C105.084 2.63873 107.212 3.50686 108.948 5.24312C110.685 6.92337 111.553 9.02369 111.553 11.5441V25.4061L103.908 27.9265V11.5441C103.908 11.096 103.768 10.7599 103.487 10.5359C103.263 10.3119 102.955 10.1999 102.563 10.1999C102.171 10.1999 101.835 10.3119 101.555 10.5359C101.331 10.7599 101.219 11.096 101.219 11.5441V18.1811C101.219 20.2534 101.639 22.6057 102.479 25.2381C103.041 26.9604 103.765 28.958 104.652 31.231ZM118.557 42.4327V70.4369H126.454V42.4327H118.557ZM126.454 31.231H118.557V11.124H112.424V3.22682H132.587V11.04H126.454V31.231ZM133.447 42.4327V70.4369H141.344V42.4327H133.447ZM141.344 31.231H133.447V3.22682H141.344V31.231ZM143.298 42.4327V70.4369H151.195V42.4327H143.298ZM151.809 42.4327L153.38 70.4369H159.681L161.252 42.4327H151.809ZM161.865 42.4327V70.4369H169.762V42.4327H161.865ZM169.762 31.231H143.298V3.22682H155.144L156.068 18.5171L156.572 28.5986L156.992 18.5171L157.916 3.22682H169.762V31.231Z"
+          fill="white"
+        />
+      </svg>
+      <a class="text-white font-poppins" href=""
+        ><svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M28 6H4C3.46957 6 2.96086 6.21071 2.58579 6.58579C2.21071 6.96086 2 7.46957 2 8V24C2 24.5304 2.21071 25.0391 2.58579 25.4142C2.96086 25.7893 3.46957 26 4 26H28C28.5304 26 29.0391 25.7893 29.4142 25.4142C29.7893 25.0391 30 24.5304 30 24V8C30 7.46957 29.7893 6.96086 29.4142 6.58579C29.0391 6.21071 28.5304 6 28 6V6ZM25.8 8L16 14.78L6.2 8H25.8ZM4 24V8.91L15.43 16.82C15.5974 16.9361 15.7963 16.9984 16 16.9984C16.2037 16.9984 16.4026 16.9361 16.57 16.82L28 8.91V24H4Z"
+            fill="white"
+          />
+        </svg>
+        adamujhazy@gmail.com</a
+      >
+    </footer>
+
+
+<!-- Style a javascript pre MagicScroll (to že sa veci hybu ked scrollujete) + fonty  -->
+
+    <style>
+      #trigger1,
+      #trigger2,
+      #trigger3,
+      #trigger4 {
+        width: 15px;
+        height: 15px;
+        background-color: blue;
+        position: absolute;
+        opacity: 0;
+      }
+
+      #trigger1 {
+        top: 28rem;
+      }
+
+      #trigger2 {
+        top: 55rem;
+        z-index: 1000000;
+      }
+      .up {
+        transform: translateY(4rem);
+      }
+
+      .down {
+        transform: translateY(-4rem);
+      }
+
+      .left {
+        transform: translateX(4rem);
+      }
+
+      .right {
+        transform: translateX(-4rem);
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400&family=Poiret+One&family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@400;600;700&display=swap");
+    </style>
+    <script>
+      const controller = new ScrollMagic.Controller();
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger1",
+        triggerHook: 0.9,
+        duration: "70%",
+        offset: 10,
+      })
+        .setClassToggle(".headphone", "up")
+        .addTo(controller);
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger2",
+        triggerHook: 0.9,
+        duration: "70%",
+        offset: 10,
+      })
+        .setClassToggle(".headphone", "down")
+        .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger2",
+        triggerHook: 0.9,
+        duration: "70%",
+        offset: 10,
+      })
+        .setClassToggle(".card2", "left")
+        .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger2",
+        triggerHook: 0.9,
+        duration: "70%",
+        offset: 10,
+      })
+        .setClassToggle(".card", "right")
+        .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger3",
+        triggerHook: 0.9,
+        duration: "70%",
+        offset: 10,
+      })
+        .setClassToggle(".object", "up")
+        .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#trigger4",
+        triggerHook: 0.9,
+        duration: "70%",
+        offset: 10,
+      })
+        .setClassToggle(".object2", "up")
+        .addTo(controller);
+
+        $(document).ready(function () {
+  $(".hamburger").click(function () {
+    $(this).toggleClass("is-active");
+  });
+});
+    </script>
+  </body>
+</html>

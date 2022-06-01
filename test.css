@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(211, 211, 211);
+  z-index: -1;
+}
+section {
+  width: 100%;
+  padding: 500px 0;
+}
+.headphone {
+  background-image: url(img/headphones.png);
+  width: 44rem;
+  height: 44rem;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge;
+  float: right;
+  /* margin-top: ${hpheight - window.screenY * 0.01}rem; */
+  animation: 1s ease-out 0s 1 slideTop;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -27rem;
+  margin-left: 50rem;
+}
+
+#trigger1,
+#trigger2,
+#trigger3 {
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  position: absolute;
+}
+
+#trigger1 {
+  top: 28rem;
+}
+
+#trigger2 {
+  top: 55rem;
+  z-index: 1000000;
+}
+.up {
+  transform: translateY(4rem);
+}
+
+.down {
+  transform: translateY(-4rem);
+}
