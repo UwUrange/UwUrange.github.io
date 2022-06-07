@@ -1458,6 +1458,10 @@ extra preklik stranka veci */
   grid-template-columns: 1fr 3fr;
 }
 
+nav{
+  z-index:999;
+}
+
 .checkproduct,
 .productalt,
 .productrealt {
