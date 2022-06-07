@@ -198,6 +198,10 @@
   .product {
     height: 120vh;
   }
+  
+    iframe {
+    display: none;
+  }
 }
 
 @media (max-width: 1500px) {
