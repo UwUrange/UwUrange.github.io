@@ -1203,8 +1203,8 @@ section,
           animation: 1s ease-out 0s 1 slideTop;
   overflow: hidden;
   position: absolute;
-  margin-top: -27rem;
-  margin-left: 50rem;
+  margin-top: -32rem;
+  margin-left: 40rem;
   transition: ease-in-out 2000ms;
 }
 
